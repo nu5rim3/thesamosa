@@ -39,33 +39,35 @@ const OrderSection = () => {
     };
 
     return (
-        <section id="order" className="w-full min-h-screen flex flex-col items-center md:pt-10">
-            <div className="container md:pt-32 md:pb-16 px-4 md:px-6 pt-20 pb-10">
-                <div className="flex flex-col items-center space-y-4 text-center">
-                    <div className="space-y-2">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Order Now</h2>
-                        <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                            Get your favorite samosa delivered straight to your door.
-                        </p>
+        <React.Fragment>
+            <section id="order" className="w-full min-h-screen flex flex-col items-center md:pt-10">
+                <div className="container md:pt-32 md:pb-16 px-4 md:px-6 pt-20 pb-10">
+                    <div className="flex flex-col items-center space-y-4 text-center">
+                        <div className="space-y-2">
+                            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Order Now</h2>
+                            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                                Get your favorite samosa delivered straight to your door.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            {/* Main content with yellow and green sections */}
-            <div className="w-full flex flex-grow">
-                <div className="w-1/2 flex items-center justify-center bg-yellow-300 flex-grow">
-                    <a onClick={openUberApp} target="_blank" rel="noopener noreferrer">
-                        <img src={pickmeLogo} alt="My Image" className="max-w-full max-h-full object-cover" />
-                    </a>
-                </div>
+                {/* Main content with yellow and green sections */}
+                <div className="w-full flex flex-grow">
+                    <div className="w-1/2 flex items-center justify-center bg-yellow-300 flex-grow">
+                        <a onClick={openUberApp} target="_blank" rel="noopener noreferrer">
+                            <img src={pickmeLogo} alt="My Image" className="max-w-full max-h-full object-cover" />
+                        </a>
+                    </div>
 
-                <div className="w-1/2 flex items-center justify-center bg-green-300 flex-grow">
-                    <a onClick={openPickMeApp} target="_blank" rel="noopener noreferrer">
-                        <img src={ubereatsLogo} alt="My Image" className="max-w-full max-h-full object-cover px-8 md:px-40" />
-                    </a>
+                    <div className="w-1/2 flex items-center justify-center bg-green-300 flex-grow">
+                        <a onClick={openPickMeApp} target="_blank" rel="noopener noreferrer">
+                            <img src={ubereatsLogo} alt="My Image" className="max-w-full max-h-full object-cover px-8 md:px-40" />
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </React.Fragment>
 
     )
 }
