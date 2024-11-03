@@ -14,19 +14,19 @@ const OrderSection = () => {
     const openUberApp = () => {
         // Uber deep link URL with pickup and drop-off locations
         const uberAppUrl = `uber://?action=setPickup&pickup[latitude]=${pickupLatitude}&pickup[longitude]=${pickupLongitude}&dropoff[latitude]=${dropoffLatitude}&dropoff[longitude]=${dropoffLongitude}&dropoff[nickname]=${encodeURIComponent(dropoffNickname)}`;
-        const uberWebUrl = `https://m.uber.com/ul/?action=setPickup&pickup[latitude]=${pickupLatitude}&pickup[longitude]=${pickupLongitude}&dropoff[latitude]=${dropoffLatitude}&dropoff[longitude]=${dropoffLongitude}&dropoff[nickname]=${encodeURIComponent(dropoffNickname)}`;
+        // const uberWebUrl = `https://m.uber.com/ul/?action=setPickup&pickup[latitude]=${pickupLatitude}&pickup[longitude]=${pickupLongitude}&dropoff[latitude]=${dropoffLatitude}&dropoff[longitude]=${dropoffLongitude}&dropoff[nickname]=${encodeURIComponent(dropoffNickname)}`;
 
         // Try to open the Uber app
         window.location.href = uberAppUrl;
 
         // Fallback to the web URL if the app is not available
         setTimeout(() => {
-            window.location.href = uberWebUrl;
+            // window.location.href = uberWebUrl;
         }, 500); // Short delay to allow app opening first
     };
 
     const pickmeAppUrl = `pickme://food`; // Replace with any specific path if available
-    const pickmeWebUrl = `https://food.pickme.lk`; // The web fallback URL for PickMe Food
+    // const pickmeWebUrl = `https://food.pickme.lk`; // The web fallback URL for PickMe Food
 
     const openPickMeApp = () => {
         // Try to open the PickMe Food app
@@ -34,7 +34,7 @@ const OrderSection = () => {
 
         // Fallback to the web URL if the app is not available
         setTimeout(() => {
-            window.location.href = pickmeWebUrl;
+            // window.location.href = pickmeWebUrl;
         }, 500); // Short delay to allow app opening first
     };
 
@@ -55,13 +55,13 @@ const OrderSection = () => {
                 {/* Main content with yellow and green sections */}
                 <div className="w-full flex flex-grow">
                     <div className="w-1/2 flex items-center justify-center bg-yellow-300 flex-grow">
-                        <a onClick={openUberApp} target="_blank" rel="noopener noreferrer">
+                        <a onClick={openPickMeApp} target="_blank" rel="noopener noreferrer">
                             <img src={pickmeLogo} alt="My Image" className="max-w-full max-h-full object-cover" />
                         </a>
                     </div>
 
                     <div className="w-1/2 flex items-center justify-center bg-green-300 flex-grow">
-                        <a onClick={openPickMeApp} target="_blank" rel="noopener noreferrer">
+                        <a onClick={openUberApp} target="_blank" rel="noopener noreferrer">
                             <img src={ubereatsLogo} alt="My Image" className="max-w-full max-h-full object-cover px-8 md:px-40" />
                         </a>
                     </div>
