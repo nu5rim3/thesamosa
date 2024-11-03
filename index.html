@@ -1,10 +1,81 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" dir="ltr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>The Samosa - feel the real taste</title>
     <link rel="icon" type="image/svg+xml" href="/thesamosa-icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Samosa - feel the real teast</title>
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="The Samosa - Experience the authentic taste of samosas with a variety of fillings and flavors."
+    />
+    <meta property="og:title" content="The Samosa - feel the real taste" />
+    <meta
+      property="og:description"
+      content="Experience the authentic taste of samosas with a variety of fillings and flavors."
+    />
+    <meta property="og:image" content="/thesamosa-preview.png" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Samosa - feel the real taste" />
+    <meta
+      name="twitter:description"
+      content="Experience the authentic taste of samosas with a variety of fillings and flavors."
+    />
+    <meta name="twitter:image" content="/thesamosa-icon.png" />
+
+    <!-- Favicon and Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts Preconnect and Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preload Script for Faster Loading -->
+    <link rel="preload" href="/src/main.tsx" as="script" />
+
+    <!-- Inline Styles for Fallback Fonts -->
+    <style>
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+      }
+    </style>
+
+    <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Restaurant",
+        "name": "The Samosa",
+        "description": "Experience the authentic taste of samosas with a variety of fillings and flavors.",
+        "image": "/thesamosa-icon.png",
+        "url": "https://thesamosa.lk"
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
