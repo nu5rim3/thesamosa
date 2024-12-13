@@ -7,11 +7,16 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import LocationSection from './sections/location'
 import FreeSection from './sections/free'
+import AnimatedCursor from "react-animated-cursor"
 
 function App() {
 
   return (
     <React.Fragment>
+      <AnimatedCursor
+        innerSize={20}
+        outerSize={20}
+      />
       <Header />
       <main className="flex-1">
         <MainSection />
