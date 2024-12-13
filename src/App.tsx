@@ -6,6 +6,7 @@ import SocialSection from './sections/social'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import LocationSection from './sections/location'
+import FreeSection from './sections/free'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <main className="flex-1">
         <MainSection />
+        <FreeSection />
         <OrderSection />
         <SocialSection />
         <LocationSection />
@@ -24,3 +26,5 @@ function App() {
 }
 
 export default App
+
+// 0759187183 - uber

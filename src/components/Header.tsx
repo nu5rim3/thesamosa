@@ -104,7 +104,9 @@ const Header = () => {
                                 </div>
                             </PopoverPanel>
                         </Popover> */}
-
+                        <a href="/#free" className="text-sm/6 font-semibold text-red-500">
+                            Free
+                        </a>
                         <a href="/#order" className="text-sm/6 font-semibold text-gray-900">
                             Order
                         </a>
@@ -114,6 +116,7 @@ const Header = () => {
                         <a href="/#location" className="text-sm/6 font-semibold text-gray-900">
                             Location
                         </a>
+
 
                     </PopoverGroup>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -165,6 +168,11 @@ const Header = () => {
                                         </DisclosurePanel>
                                     </Disclosure> */}
                                     <a
+                                        href="/#free"
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-red-500 hover:bg-gray-50"                                 >
+                                        Free
+                                    </a>
+                                    <a
                                         href="/#order"
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                                     >
@@ -176,12 +184,14 @@ const Header = () => {
                                     >
                                         Social
                                     </a>
+
                                     <a
                                         href="/#location"
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                                     >
                                         Location
                                     </a>
+
                                 </div>
                                 {/* <div className="py-6">
                                     <a

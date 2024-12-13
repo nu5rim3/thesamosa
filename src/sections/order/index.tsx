@@ -44,7 +44,7 @@ const OrderSection = () => {
                 <div className="container md:pt-32 md:pb-16 px-4 md:px-6 pt-20 pb-10">
                     <div className="flex flex-col items-center space-y-4 text-center">
                         <div className="space-y-2">
-                            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Order Now</h2>
+                            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Order Now Is Coming Soon</h2>
                             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                                 Get your favorite samosa delivered straight to your door.
                             </p>
