@@ -5,23 +5,19 @@ import ubereatsLogo from '../../assets/ubereats.png'
 
 const OrderSection = () => {
 
-    const pickupLatitude = '37.7749';
-    const pickupLongitude = '-122.4194';
-    const dropoffLatitude = '37.7849';
-    const dropoffLongitude = '-122.4094';
-    const dropoffNickname = 'Destination';
+    const restaurantUuid = 'street-burger/QyfD6y_iTISMr58OFwxN1A?mod=closedStore&modctx=%257B%2522storeUuid%2522%253A%25224327c3eb-2fe2-4c84-8caf-9f0e170c4dd4%2522%257D&ps=1&sc=SEARCH_SUGGESTION';
 
     const openUberApp = () => {
-        // Uber deep link URL with pickup and drop-off locations
-        const uberAppUrl = `uber://?action=setPickup&pickup[latitude]=${pickupLatitude}&pickup[longitude]=${pickupLongitude}&dropoff[latitude]=${dropoffLatitude}&dropoff[longitude]=${dropoffLongitude}&dropoff[nickname]=${encodeURIComponent(dropoffNickname)}`;
-        const uberWebUrl = `https://m.uber.com/ul/?action=setPickup&pickup[latitude]=${pickupLatitude}&pickup[longitude]=${pickupLongitude}&dropoff[latitude]=${dropoffLatitude}&dropoff[longitude]=${dropoffLongitude}&dropoff[nickname]=${encodeURIComponent(dropoffNickname)}`;
+        // Uber Eats deep link URL for a specific restaurant
+        const uberEatsAppUrl = `ubereats://store/${restaurantUuid}`;
+        const uberEatsWebUrl = `https://www.ubereats.com/store/${restaurantUuid}`;
 
-        // Try to open the Uber app
-        window.location.href = uberAppUrl;
+        // Try to open the Uber Eats app
+        window.location.href = uberEatsAppUrl;
 
         // Fallback to the web URL if the app is not available
         setTimeout(() => {
-            window.location.href = uberWebUrl;
+            window.location.href = uberEatsWebUrl;
         }, 500); // Short delay to allow app opening first
     };
 

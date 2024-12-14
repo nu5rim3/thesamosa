@@ -4,7 +4,7 @@ import { Instagram, Facebook } from "lucide-react"
 
 const SocialSection = () => {
 
-    const instagramUsername = 'thesamosa_lk';
+    const instagramUsername = 'thesamosa.lk';
 
     const openInstagramApp = () => {
         const instagramAppUrl = `instagram://user?username=${instagramUsername}`;
@@ -38,7 +38,7 @@ const SocialSection = () => {
         <React.Fragment>
             <section id="social" className="py-12 md:py-12 lg:py-32 w-full h-screen flex items-center justify-center bg-yellow-400">
                 <div className="container px-4 md:px-6 ">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 md:pt-32">Connect With Us</h2>
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 md:pt-32">Connect With Us <br />For<br /> More Fun</h2>
                     <div className="flex justify-center space-x-4">
                         {/* <button onClick={openInstagramApp}>hello</button> */}
                         <a target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900" onClick={openInstagramApp}>
