@@ -9,7 +9,7 @@ const LocationSection = () => {
                         <div className="space-y-2">
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Find the location</h2>
                             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                                Get your favorite burgers delivered straight to your door with Uber Eats.
+                                Feel the real crunchiness of a samosa by visiting our outlet!
                             </p>
                         </div>
                         <div className="w-full items-center justify-center hidden md:flex">
