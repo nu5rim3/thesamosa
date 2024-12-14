@@ -4,7 +4,7 @@ const FreePage: React.FC = () => {
     return (
         <React.Fragment>
             <div id="free" className={`flex w-full h-screen items-center justify-center bg-yellow-400 text-center bg-[url('/bg-patten.svg')]`}>
-                <div className='modak-regular text-2xl md:text-8xl '>To grab a
+                <div className='modak-regular text-3xl md:text-8xl px-2'>To grab a
                     <br />
                     <a href='https://linktr.ee/thesamosa' className='text-red-500 underline'>
                         <span className='text-red-500'>free samosa </span>
@@ -15,7 +15,7 @@ const FreePage: React.FC = () => {
                     <br />
                     drop the experience of
                     <br />
-                    your first byte
+                    your first bite
                     <br />
                     via
                     <br />
