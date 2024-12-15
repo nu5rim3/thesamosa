@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import LocationSection from './sections/location'
 import FreeSection from './sections/free'
+import MenuSection from './sections/menu'
 import AnimatedCursor from "react-animated-cursor"
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <main className="flex-1">
         <MainSection />
         <FreeSection />
+        <MenuSection />
         <OrderSection />
         <SocialSection />
         <LocationSection />

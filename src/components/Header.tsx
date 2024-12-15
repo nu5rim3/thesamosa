@@ -107,6 +107,9 @@ const Header = () => {
                         <a href="/#free" className="text-sm/6 font-semibold text-red-500">
                             Free
                         </a>
+                        <a href="/#menu" className="text-sm/6 font-semibold text-gray-900">
+                            Menu
+                        </a>
                         <a href="/#order" className="text-sm/6 font-semibold text-gray-900">
                             Order
                         </a>
@@ -169,8 +172,14 @@ const Header = () => {
                                     </Disclosure> */}
                                     <a
                                         href="/#free"
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-red-500 hover:bg-gray-50"                                 >
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"                                 >
                                         Free
+                                    </a>
+                                    <a
+                                        href="/#menu"
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                                    >
+                                        Menu
                                     </a>
                                     <a
                                         href="/#order"
