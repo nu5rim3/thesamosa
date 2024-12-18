@@ -51,13 +51,15 @@ const OrderSection = () => {
                 {/* Main content with yellow and green sections */}
                 <div className="w-full flex flex-grow">
                     <div className="w-1/2 flex items-center justify-center bg-yellow-300 flex-grow">
-                        <a onClick={openPickMeApp} target="_blank" rel="noopener noreferrer">
+                        <a onClick={() => alert('Coming Soon')} target="_blank" rel="noopener noreferrer">
+                            {/* <a onClick={openPickMeApp} target="_blank" rel="noopener noreferrer" className='disabled'> */}
                             <img src={pickmeLogo} alt="My Image" className="max-w-full max-h-full object-cover" />
                         </a>
                     </div>
 
                     <div className="w-1/2 flex items-center justify-center bg-green-300 flex-grow">
-                        <a onClick={openUberApp} target="_blank" rel="noopener noreferrer">
+                        <a onClick={() => alert('Coming Soon')} target="_blank" rel="noopener noreferrer">
+                            {/* <a onClick={openUberApp} target="_blank" rel="noopener noreferrer"> */}
                             <img src={ubereatsLogo} alt="My Image" className="max-w-full max-h-full object-cover px-8 md:px-40" />
                         </a>
                     </div>

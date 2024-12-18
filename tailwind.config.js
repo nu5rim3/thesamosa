@@ -8,5 +8,8 @@ export default {
       },
     },
   },
+  variants: {
+    opacity: ({ after }) => after(["disabled"]),
+  },
   plugins: [],
 };
