@@ -1,5 +1,5 @@
 import React from 'react'
-import { Instagram, Facebook } from "lucide-react"
+import { Instagram, Facebook, Youtube } from "lucide-react"
 // import { InstagramEmbed } from 'react-social-media-embed'
 
 const SocialSection = () => {
@@ -34,6 +34,21 @@ const SocialSection = () => {
         }, 500); // Short delay to allow app opening first
     }
 
+    const youtubeUsername = '@TheSamosaLK';
+
+    const openYoutubeApp = () => {
+        const youtubeAppUrl = `youtube://${youtubeUsername}`;
+        const youtubeWebUrl = `https://www.youtube.com/${youtubeUsername}`;
+
+        // Try to open the Youtube app
+        window.location.href = youtubeAppUrl;
+
+        // Fallback to the web URL if the app is not available
+        setTimeout(() => {
+            window.location.href = youtubeWebUrl;
+        }, 500); // Short delay to allow app opening first
+    }
+
     return (
         <React.Fragment>
             <section id="social" className="py-12 md:py-12 lg:py-32 w-full h-screen flex items-center justify-center bg-yellow-400">
@@ -50,10 +65,10 @@ const SocialSection = () => {
                             <Facebook className="h-8 w-8" />
                             <span className="sr-only">Facebook</span>
                         </a>
-                        {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
-                            <Twitter className="h-8 w-8" />
-                            <span className="sr-only">Twitter</span>
-                        </a> */}
+                        <a target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900" onClick={openYoutubeApp}>
+                            <Youtube className="h-8 w-8" />
+                            <span className="sr-only">Youtube</span>
+                        </a>
 
                     </div>
 
