@@ -5,34 +5,34 @@ import ubereatsLogo from '../../assets/ubereats.png'
 
 const OrderSection = () => {
 
-    const restaurantUuid = 'street-burger/QyfD6y_iTISMr58OFwxN1A?mod=closedStore&modctx=%257B%2522storeUuid%2522%253A%25224327c3eb-2fe2-4c84-8caf-9f0e170c4dd4%2522%257D&ps=1&sc=SEARCH_SUGGESTION';
+    // const restaurantUuid = 'street-burger/QyfD6y_iTISMr58OFwxN1A?mod=closedStore&modctx=%257B%2522storeUuid%2522%253A%25224327c3eb-2fe2-4c84-8caf-9f0e170c4dd4%2522%257D&ps=1&sc=SEARCH_SUGGESTION';
 
-    const openUberApp = () => {
-        // Uber Eats deep link URL for a specific restaurant
-        const uberEatsAppUrl = `ubereats://store/${restaurantUuid}`;
-        const uberEatsWebUrl = `https://www.ubereats.com/store/${restaurantUuid}`;
+    // const openUberApp = () => {
+    //     // Uber Eats deep link URL for a specific restaurant
+    //     const uberEatsAppUrl = `ubereats://store/${restaurantUuid}`;
+    //     const uberEatsWebUrl = `https://www.ubereats.com/store/${restaurantUuid}`;
 
-        // Try to open the Uber Eats app
-        window.location.href = uberEatsAppUrl;
+    //     // Try to open the Uber Eats app
+    //     window.location.href = uberEatsAppUrl;
 
-        // Fallback to the web URL if the app is not available
-        setTimeout(() => {
-            window.location.href = uberEatsWebUrl;
-        }, 500); // Short delay to allow app opening first
-    };
+    //     // Fallback to the web URL if the app is not available
+    //     setTimeout(() => {
+    //         window.location.href = uberEatsWebUrl;
+    //     }, 500); // Short delay to allow app opening first
+    // };
 
-    const pickmeAppUrl = `pickme://food`; // Replace with any specific path if available
-    const pickmeWebUrl = `https://food.pickme.lk`; // The web fallback URL for PickMe Food
+    // const pickmeAppUrl = `pickme://food`; // Replace with any specific path if available
+    // const pickmeWebUrl = `https://food.pickme.lk`; // The web fallback URL for PickMe Food
 
-    const openPickMeApp = () => {
-        // Try to open the PickMe Food app
-        window.location.href = pickmeAppUrl;
+    // const openPickMeApp = () => {
+    //     // Try to open the PickMe Food app
+    //     window.location.href = pickmeAppUrl;
 
-        // Fallback to the web URL if the app is not available
-        setTimeout(() => {
-            window.location.href = pickmeWebUrl;
-        }, 500); // Short delay to allow app opening first
-    };
+    //     // Fallback to the web URL if the app is not available
+    //     setTimeout(() => {
+    //         window.location.href = pickmeWebUrl;
+    //     }, 500); // Short delay to allow app opening first
+    // };
 
     return (
         <React.Fragment>
