@@ -17,7 +17,8 @@
     "react-animated-cursor": "^2.11.2",
     "react-dom": "^18.3.1",
     "react-open-app": "^1.0.3",
-    "react-social-media-embed": "^2.5.17"
+    "react-social-media-embed": "^2.5.17",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
