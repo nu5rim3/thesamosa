@@ -4,12 +4,16 @@ const FreePage: React.FC = () => {
     return (
         <React.Fragment>
             <div id="free" className={`flex w-full h-screen items-center justify-center bg-yellow-400 text-center bg-[url('/bg-patten.svg')]`}>
-                <div className='modak-regular text-3xl md:text-8xl px-2'>To grab a
+                <div className='modak-regular text-3xl md:text-8xl px-2'>
+                    <a href='https://linktr.ee/thesamosa' className='text-red-500 underline'>
+                        <br />
+                        Follow us</a>
+                    <br />
+                    to grab a
                     <br />
                     <a href='https://linktr.ee/thesamosa' className='text-red-500 underline'>
                         <span className='text-red-500'>free samosa </span>
-                        <br />
-                        follow us</a>
+                    </a>
                     <br />
                     and
                     <br />
@@ -19,7 +23,7 @@ const FreePage: React.FC = () => {
                     <br />
                     via
                     <br />
-                    <a href='https://wa.me/94770581871' className='text-green-500 underline'>whatsApp</a>
+                    <a href='https://wa.me/94770581871' className='text-green-500 underline'>WhatsApp</a>
                 </div>
             </div>
         </React.Fragment>
